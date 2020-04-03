@@ -11,7 +11,9 @@ end
 items = me.listAvailableItems()
 
 for k, v in pairs(items) do
-    print(k, v)
+    for x, z in pairs(v) do
+        print(k, x, z)
+    end
 end
 
 
