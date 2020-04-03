@@ -30,7 +30,7 @@ function draw_text(mon, x, y, text, text_color, bg_color)
  end
 
 
- function scrollText(tStrings, nRate)
+ function scrollText(mon, tStrings, nRate)
    nRate = nRate or 5
    if nRate < 0 then
      error("rate must be positive")
