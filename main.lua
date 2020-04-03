@@ -53,7 +53,9 @@ end
 
 -- print to monitor
 for id, count in pairs(currentInventory) do
-    f.draw_text_lr(mon, 2, 19, 1, id, count, colors.gray, colors.gray, colors.black)
+    f.draw_text_lr(mon, 2, 19, 1, split(id,":")[1], count, colors.gray, colors.gray, colors.black)
 end
+
+f.scrollText(foodNames, 5)
 
 print("done")
