@@ -2,17 +2,18 @@
 local meSide = "back"
 local foodNamesPath = "food_names.csv"
 
+-- api
+os.loadAPI("lib/f")
+
+-- monitor peripheral
 local mon, monitor, monX, monY
-monitor = 
+monitor = f.periphSearch("monitor")
 
 -- get me system
 local me = peripheral.wrap(meSide)
 if me == null then
     error("me interface not found")
 end
-
--- api
-os.loadAPI("lib/f")
 
 -- read csv with item names
 local foodNames = {}
