@@ -1,4 +1,5 @@
 local mainURL = "https://raw.githubusercontent.com/abrookes-1/ultimate_stew/master/main.lua"
+local mainURL = "https://raw.githubusercontent.com/abrookes-1/ultimate_stew/master/food_names.csv"
 local main
 
 -- open main and write to file system

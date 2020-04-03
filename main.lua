@@ -12,6 +12,7 @@ items = me.listAvailableItems()
 
 for indx, stack in pairs(items) do
     print(stack["name"])
+    print(stack["count"]
 end
 
 
