@@ -22,12 +22,12 @@ local line = foodNamesFile.readLine()
 
 while line do
     table.insert(foodNames, line)
-    line = f.readLine()
+    line = foodNamesFile.readLine()
 end
 
 foodNamesFile.close()
 
-print(food_names[1][1])
+print(foodNames[1][1])
 
 
 
