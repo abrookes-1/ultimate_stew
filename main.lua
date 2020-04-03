@@ -28,11 +28,15 @@ end
 foodNamesFile.close()
 
 -- compare required items with me inventory
+local currentInventory = {}
+
 for k, id in pairs(foodNames) do
     searchResult = me.findItems(id)
     if searchResult[1] then
         meta = searchResult[1].getMetadata()
-        print(meta.name)
+        currentInventory[id] = meta.count
+    else
+        currentInventory[id] = 0
     end
 end
 
