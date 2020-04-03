@@ -1,5 +1,5 @@
 -- set the location of your me block relative to the computer
-local meSide = "left"
+local meSide = "appeng_me_tileterminal_0"
 
 local me = peripheral.wrap(meSide)
 
