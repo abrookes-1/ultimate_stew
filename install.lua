@@ -1,4 +1,4 @@
-local mainURL = "https://github.com/abrookes-1/ultimate_stew/blob/master/main.lua"
+local mainURL = "https://raw.githubusercontent.com/abrookes-1/ultimate_stew/master/main.lua"
 local main
 
 -- open main and write to file system
