@@ -13,3 +13,6 @@ items = me.listAvailableItems()
 for k, v in pairs(items) do
     print(k, v)
 end
+
+
+print("done")
