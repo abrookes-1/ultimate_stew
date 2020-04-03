@@ -16,7 +16,7 @@ items = me.listAvailableItems()
 -- end
 
 -- read csv with item names
-local foodNames{}
+local foodNames = {}
 local foodNamesFile = fs.open(foodNamesPath, "r")
 local line = foodNamesFile.readLine()
 
