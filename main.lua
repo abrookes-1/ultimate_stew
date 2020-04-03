@@ -56,6 +56,6 @@ for id, count in pairs(currentInventory) do
     f.draw_text_lr(mon, 2, 19, 1, id, count, colors.gray, colors.gray, colors.black)
 end
 
-f.scrollText(mon, foodNames, 5)
+f.scrollText(mon.monitor, foodNames, 5)
 
 print("done")
