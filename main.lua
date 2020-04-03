@@ -2,18 +2,17 @@
 local meSide = "back"
 local foodNamesPath = "food_names.csv"
 
+local mon, monitor, monX, monY
+monitor = 
+
 -- get me system
 local me = peripheral.wrap(meSide)
 if me == null then
     error("me interface not found")
 end
 
--- inventory = me.listAvailableItems()
-
--- for indx, stack in pairs(items) do
---     --print(stack["name"])
---     --print(stack["count"]
--- end
+-- api
+os.loadAPI("lib/f")
 
 -- read csv with item names
 local foodNames = {}
@@ -27,17 +26,8 @@ end
 
 foodNamesFile.close()
 
--- compare required items with me inventory
-local currentInventory = {}
 
-for k, id in pairs(foodNames) do
-    searchResult = me.findItems(id)
-    if searchResult[1] then
-        meta = searchResult[1].getMetadata()
-        currentInventory[id] = meta.count
-    else
-        currentInventory[id] = 0
-    end
-end
+
+
 
 print("done")
