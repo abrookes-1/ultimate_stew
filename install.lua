@@ -2,7 +2,7 @@ local mainURL = "https://github.com/abrookes-1/ultimate_stew/blob/master/main.lu
 local main
 
 -- open main and write to file system
-main= = http.get(mainURL)
+main = http.get(mainURL)
 mainFile = main.readAll()
 
 local file1 = fs.open("stew", "w")
