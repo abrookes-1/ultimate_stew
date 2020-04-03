@@ -41,7 +41,7 @@ local currentInventory = {}
 for k, id in pairs(foodNames) do
     searchResult = me.findItems(id)
     if searchResult[1] then
-        meta = searchResult[1].getMetaData()
+        meta = searchResult[1].getMetadata()
         currentInventory[id] = meta.count
     else
         currentInventory[id] = 0
