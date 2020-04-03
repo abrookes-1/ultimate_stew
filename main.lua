@@ -8,7 +8,7 @@ if me == null then
     error("me interface not found")
 end
 
-items = me.listAvailableItems()
+-- inventory = me.listAvailableItems()
 
 -- for indx, stack in pairs(items) do
 --     --print(stack["name"])
@@ -27,8 +27,9 @@ end
 
 foodNamesFile.close()
 
-print(foodNames[1][1])
-
-
+-- compare required items with me inventory
+for k, id in foodNames do
+    print(me.findItems(id)[0]["name"])
+end
 
 print("done")
