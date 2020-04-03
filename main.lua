@@ -28,8 +28,12 @@ end
 foodNamesFile.close()
 
 -- compare required items with me inventory
-for k, id in foodNames do
-    print(me.findItems(id)[0]["name"])
+for k, id in pairs(foodNames) do
+    searchResult = me.findItems(id)
+    if searchResult[1] then
+        meta = searchResult[1].getMetaData()
+        print(meta.name)
+    end
 end
 
 print("done")
