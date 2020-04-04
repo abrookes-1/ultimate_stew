@@ -68,7 +68,7 @@ function wrapText(mon, text)
   cursor = 0
   x, y = mon.monitor.getCursorPos()
   for c in string.gmatch(text, ".") do
-    mon.monitor.write("c")
+    mon.monitor.write(c)
     cursor = cursor + 1
     
     if cursor > mon.X - 1 then

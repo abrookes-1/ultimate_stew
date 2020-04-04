@@ -52,8 +52,11 @@ end
 
 
 -- print to monitor
+mon.monitor.clear()
+mon.monitor.setCursorPos(1,1)
+
 for id, count in pairs(currentInventory) do
-    f.wrapText("hippity hoppity asdf asdf asdf ding ding ding done lololololol reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
+    f.wrapText(mon, "hippity hoppity asdf asdf asdf ding ding ding done lololololol reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
 end
 
 print("done")
