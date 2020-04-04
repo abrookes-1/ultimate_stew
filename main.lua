@@ -56,7 +56,10 @@ mon.monitor.clear()
 mon.monitor.setCursorPos(1,1)
 
 for id, count in pairs(currentInventory) do
-    w.wrapText(mon, string.gmatch(id, ":")[1] .. toString(count))
+    for s in string.gmatch(id, ":") do
+        commonName = s
+    end
+    f.wrapText(mon, commonName .. toString(count))
 end
 
 print("done")
