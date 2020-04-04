@@ -56,6 +56,4 @@ for id, count in pairs(currentInventory) do
     f.wrapText("hippity hoppity asdf asdf asdf ding ding ding done lololololol reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
 end
 
-f.scrollText(mon.monitor, foodNames, 5)
-
 print("done")
