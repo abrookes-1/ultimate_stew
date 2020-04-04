@@ -62,4 +62,23 @@ function draw_text(mon, x, y, text, text_color, bg_color)
       sleep(nSleep)
      end
    end
-   end
+end
+
+function wrapText(mon, text)
+  cursor = 0
+  x, y = mon.monitor.getCursorPos()
+  for c in string.gmatch(text, ".")
+    mon.monitor.write("c")
+    cursor = cursor + 1
+    
+    if cursor > mon.X - 1 then
+      x, y = mon.monitor.getCursorPos()
+      mon.monitor.setCursorPos(1,y+1)
+      cursor = 0
+    end
+  end
+
+  x, y = mon.monitor.getCursorPos()
+  mon.monitor.setCursorPos(1, y+1)
+
+end
